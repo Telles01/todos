@@ -1,0 +1,14 @@
+<div id="<%= dom_id todo_item %>" class="w-full sm:w-auto my-5 space-y-5">
+  <div>
+    <strong class="block font-medium mb-1">Todo list:</strong>
+    <%= todo_item.todo_list_id %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Text:</strong>
+    <%= todo_item.text %>
+  </div>
+  <div>
+    <strong class="block font-medium mb-1">Completed:</strong>
+    <%= todo_item.completed? ? "Yes" : "No" %>
+  </div>
+</div>
